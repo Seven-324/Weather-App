@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="assets/css/font/material-icons.css">
+    <link rel="stylesheet" href="assets/css/materialize.min.css">
+    <style>
+        body{
+            background-image: url('images/weather-background.jpg');
+            background-size: cover;
+            color: black;
+        }
+        h1{
+            font-weight: 500;
+            text-align: center;
+        }
+        .user-part #inputcity{
+            margin-top: 100px;
+            background-color: white;
+            border-radius: 3px;
+        }
+        .display{
+            padding: 10vh 10vw 10vh 10vw;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .display h2{
+            font-size: 80px;
+            font-weight: 500;
+        }
+        .display h5{
+            font-size: 25px;
+            margin-top: -20px;
+            margin-bottom: -10px;
+        }
+        .display h4{
+            font-size: 40px;
+            font-weight: 500;
+        }
+        .display h3{
+            margin-top: -10px;
+            font-size: 60px;
+            font-weight: 500;
+        }
+        .display .material-icons{
+            margin-top: 100px;
+        }
+        .display p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body class="">
+    <section class="user-part">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l12">
+                    <h1 class="heading">Weather App</h1>
+                    <form id="weather-form">
+                        <input type="text" placeholder="enter a city" id="inputcity" autofocus>
+                        <button type="submit" class="yellow darken-4">SUBMIT</button>
+                        <span class="msg"></span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="display">
+        <div class="center">
+            <h2 id="temperature"></h2>
+            <h5 id="feels_like"></h5>
+            <h4 id="weather-description"></h4><br><br>
+            <span><i class="material-icons medium">place</i></span><h3 id="location"></h3>
+            <p id="time"></p>
+        </div>
+    </section>
+    
+    <footer class="page-footer transparent" style="margin-top: 500px; height: 100px;">
+        <div class="footer-copyright yellow darken-4">
+            <p class="container center">&copy; 2020 Designed by Sonia Otiono</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/materialize.min.js"></script>
+    <script src="assets/js/weatherapp.js"></script>
+</body>
+</html>
